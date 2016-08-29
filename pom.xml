@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion> 
+  <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.fasterxml.jackson</groupId>
     <artifactId>jackson-parent</artifactId>
@@ -17,7 +17,7 @@ JSON Schema (http://tools.ietf.org/html/draft-zyp-json-schema-03) version 3 gene
   <scm>
     <connection>scm:git:git@github.com:FasterXML/jackson-module-jsonSchema.git</connection>
     <developerConnection>scm:git:git@github.com:FasterXML/jackson-module-jsonSchema.git</developerConnection>
-    <url>http://github.com/FasterXML/jackson-module-jsonSchema</url>    
+    <url>http://github.com/FasterXML/jackson-module-jsonSchema</url>
     <tag>HEAD</tag>
   </scm>
   <developers>
@@ -39,6 +39,19 @@ JSON Schema (http://tools.ietf.org/html/draft-zyp-json-schema-03) version 3 gene
     <javac.src.version>1.6</javac.src.version>
     <javac.target.version>1.6</javac.target.version>
   </properties>
+
+  <distributionManagement>
+      <repository>
+          <id>axway</id>
+          <name>Axway Release</name>
+          <url>https://nexus.rest-let.com/nexus/content/repositories/axway</url>
+      </repository>
+      <snapshotRepository>
+          <id>nexus-snapshots</id>
+          <name>Nexus Snapshot Repository</name>
+          <url>https://nexus.rest-let.com/nexus/content/repositories/snapshots/</url>
+      </snapshotRepository>
+  </distributionManagement>
 
   <dependencies>
     <dependency>
